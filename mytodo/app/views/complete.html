@@ -1,0 +1,13 @@
+<div class="container">
+	<div ng-model="todos">
+		<h3>Here are the tasks you have completed:</h3>
+			<p class="input-group" ng-repeat="todo in todos" style="padding:5px 10px; cursor: move;">
+		      <input type="text" ng-model="todo.title">
+		    </p>
+	</div>
+	<br/>
+	<br/>
+	<span class="input-group-btn">
+        <button class="btn btn-danger" ng-click="emptyCompletedTodos()" aria-label="Remove">
+          <span class="glyphicon glyphicon-remove"></span></button></span>
+</div>
